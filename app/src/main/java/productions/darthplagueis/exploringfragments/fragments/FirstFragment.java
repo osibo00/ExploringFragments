@@ -24,6 +24,9 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView =  inflater.inflate(R.layout.fragment_first, container, false);
         textView = (TextView) rootView.findViewById(R.id.firstfrag_textview);
+        Bundle bundle = getArguments();
+        String textFromEditText = bundle.getString("first", "");
+        textView.setText(textFromEditText);
         return rootView;
     }
 
