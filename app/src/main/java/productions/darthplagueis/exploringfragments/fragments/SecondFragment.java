@@ -10,20 +10,20 @@ import android.widget.TextView;
 
 import productions.darthplagueis.exploringfragments.R;
 
-public class FirstFragment extends Fragment {
+public class SecondFragment extends Fragment {
 
     private View rootView;
     private TextView textView;
 
 
-    public FirstFragment() {}
+    public SecondFragment() {}
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView =  inflater.inflate(R.layout.fragment_first, container, false);
-        textView = (TextView) rootView.findViewById(R.id.firstfrag_textview);
+        rootView =  inflater.inflate(R.layout.fragment_second, container, false);
+        textView = (TextView) rootView.findViewById(R.id.secondfrag_textview);
         return rootView;
     }
 
