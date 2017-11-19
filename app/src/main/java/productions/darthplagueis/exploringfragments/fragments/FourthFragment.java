@@ -23,6 +23,9 @@ public class FourthFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_fourth, container, false);
         textView = (TextView) rootView.findViewById(R.id.fourthfrag_textview);
+        Bundle bundle = getArguments();
+        String textFromEditText = bundle.getString("fourth", "");
+        textView.setText(textFromEditText);
         return rootView;
     }
 
